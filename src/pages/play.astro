@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/common/Container.astro';
+import CosmicQuizGame from '../components/game/CosmicQuizGame.astro';
+import Leaderboard from '../components/game/Leaderboard.astro';
+
+---
+
+<Layout title="Cosmic Quiz Arena">
+  <Container>
+    <div class="py-16">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          Cosmic Quiz Arena
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">
+          Join the cosmic challenge and test your astronomy knowledge
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-[1fr_300px] gap-8">
+        <CosmicQuizGame />
+        <Leaderboard />
+      </div>
+    </div>
+  </Container>
+</Layout>
